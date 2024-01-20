@@ -448,7 +448,7 @@ function MyComponent() {
     const fetchLocations = async () => {
       try {
         if (details.origin) {
-          const originApiUrl = `https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${details.origin}`;
+          const originApiUrl = `https://api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${details.origin}`;
   
           const originResponse = await axios.get(originApiUrl, { headers });
           const originLocations = originResponse.data.data;
@@ -460,7 +460,7 @@ function MyComponent() {
         }
   
         if (details.destination) {
-          const destinationApiUrl = `https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${details.destination}`;
+          const destinationApiUrl = `https://api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${details.destination}`;
   
           const destinationResponse = await axios.get(destinationApiUrl, { headers });
           const destinationLocations = destinationResponse.data.data;
@@ -470,7 +470,7 @@ function MyComponent() {
         }
   
         if (detailsMulti.origin) {
-          const originApiUrlMulti = `https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${detailsMulti.origin}`;
+          const originApiUrlMulti = `https://api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${detailsMulti.origin}`;
   
           const originResponseMulti = await axios.get(originApiUrlMulti, { headers });
           const originLocationsMulti = originResponseMulti.data.data;
@@ -480,7 +480,7 @@ function MyComponent() {
         }
   
         if (detailsMulti.destination) {
-          const destinationApiUrlMulti = `https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${detailsMulti.destination}`;
+          const destinationApiUrlMulti = `https://api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=${detailsMulti.destination}`;
   
           const destinationResponseMulti = await axios.get(destinationApiUrlMulti, { headers });
           const destinationLocationsMulti = destinationResponseMulti.data.data;
