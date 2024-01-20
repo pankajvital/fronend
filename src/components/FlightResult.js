@@ -195,7 +195,7 @@ const FlightResult = () => {
     } else if (accessToken) {
       console.log("Access Token:", accessToken);
 
-      let apiUrl = `https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${location.state.details.origin}&destinationLocationCode=${location.state.details.destination}&departureDate=${location.state.details.from}&adults=${location.state.details.passengerData.adults}&children=${location.state.details.passengerData.children}&infants=${location.state.details.passengerData.infant}&travelClass=${location.state.details.cabin}&currencyCode=USD&max`;
+      let apiUrl = `https://api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${location.state.details.origin}&destinationLocationCode=${location.state.details.destination}&departureDate=${location.state.details.from}&adults=${location.state.details.passengerData.adults}&children=${location.state.details.passengerData.children}&infants=${location.state.details.passengerData.infant}&travelClass=${location.state.details.cabin}&currencyCode=USD&max`;
       
 
 
