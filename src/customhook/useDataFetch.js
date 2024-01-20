@@ -4,14 +4,14 @@ import axios from 'axios';
 // Replace these values with your Amadeus API credentials
 // const clientId = '5uRRRNG7h9b2DoBGIDgWApV3qC9KszAq';
 // const clientSecret = 'ZGXyMeA6sWW81duA';
-const clientId = 'KEUu3vZkAEYsCq8snJUzcUl3GPkThNrM';
-const clientSecret = 'b4G93MTdvTF4Pot3';
+// const clientId = 'KEUu3vZkAEYsCq8snJUzcUl3GPkThNrM';
+// const clientSecret = 'b4G93MTdvTF4Pot3';
 // below paid api 
 // const clientId = 'PKgL34NqTF0Tjd1qBIjVqt8Ogagwynx3';
 // const clientSecret = 'UZShahJjLWT4t7Th';
 
-// const clientId = 'BpVyvFodRgC57CNu0O6t3FrDG7jiCnjG';
-// const clientSecret = '2D5c35A1AgbzI9Yx'; 
+const clientId = 'BpVyvFodRgC57CNu0O6t3FrDG7jiCnjG';
+const clientSecret = '2D5c35A1AgbzI9Yx'; 
 
 // Amadeus token endpoint
 const tokenUrl = 'https://test.api.amadeus.com/v1/security/oauth2/token';
